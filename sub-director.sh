@@ -30,10 +30,14 @@
 # - v0.1 - initial release
 #   v0.2 - fix reg w/o satellite & paths on rhel6
 #
-# TODO: * If a subscription name is entirely contained within another sub
+# TODO: * account for providing incorrect user/pass
+#       * If a subscription name is entirely contained within another sub
 #         name, allow for the search to accomodate it. For example
 #         - Red Hat Satellite & Red Hat Satellite Capsule Server
+#         no way to selct just the Red Hat Satellite sub
 #       * maybe provide some way to show details of a sub if requested
+#       * line 179: [: -eq: unary operator expected, which is the first if
+#         in find_sub
 #
 
 SUBMGR=/usr/sbin/subscription-manager
